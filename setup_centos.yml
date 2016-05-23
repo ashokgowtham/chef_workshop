@@ -15,7 +15,10 @@ Setting up a centos VM
 5: enable private networking in the VM:
   - uncomment or add the following line in Vagrantfile
         config.vm.network "private_network", ip: "192.168.33.10"
+  - vagrant halt
+  - vagrant up
 6: test if you can ssh into the VM:
   - ssh vagrant@192.168.33.10
+  - password: vagrant
 7: install wget:
   - sudo yum install -y wget
