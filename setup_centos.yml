@@ -1,0 +1,21 @@
+Setting up a centos VM
+
+1: install virtualbox:
+  - http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg
+2: install vagrant:
+  - brew install vagrant
+3: download centos6.4 image:
+  - mkdir VM
+  - cd VM
+  - wget http://github.com/2creatives/vagrant-centos/releases/download/v6.4.2/centos64-x86_64-20140116.box
+4: add the vagrant box and boot it:
+  - vagrant box add centos64-x86_64-20140116.box --name centos6.4
+  - vagrant init centos6.4
+  - vagrant up
+5: enable private networking in the VM:
+  - uncomment or add the following line in Vagrantfile
+        config.vm.network "private_network", ip: "192.168.33.10"
+6: test if you can ssh into the VM:
+  - ssh vagrant@192.168.33.10
+7: install wget:
+  - sudo yum install -y wget

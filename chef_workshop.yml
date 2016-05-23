@@ -1,0 +1,12 @@
+1: install ChefDK:
+  - wget https://packages.chef.io/stable/el/6/chefdk-0.14.25-1.el6.x86_64.rpm
+  - sudo rpm -Uvh chefdk-0.14.25-1.el6.x86_64.rpm
+2: hello world example:
+  - create a file with the content 'hello world'
+  - create it under a different directory
+  - delete the file and directory
+3: setup an nginx http server and deploy a sample static page:
+  - install nginx
+  - enable and start the service
+  - add a home page
+  - configure nginx to serve static pages
