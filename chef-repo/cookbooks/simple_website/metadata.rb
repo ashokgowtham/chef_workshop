@@ -1,0 +1,7 @@
+name 'simple_website'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures simple_website'
+long_description 'Installs/Configures simple_website'
+version '0.1.0'
