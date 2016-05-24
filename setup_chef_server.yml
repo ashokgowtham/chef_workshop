@@ -12,3 +12,11 @@
   - sudo chef-server-ctl user-create ADMIN_USER_NAME ADMIN_FIRST_NAME ADMIN_LAST_NAME ADMIN_EMAIL ADMIN_PASSWORD --filename ADMIN_USER_NAME.pem
 5: create an org:
   - sudo chef-server-ctl org-create ORG_SHORT_NAME "ORG_LONG_NAME" --association_user ADMIN_USER_NAME
+6: Download starter kit from chef server UI:
+  - go to chef server UI (https://192.168.33.20)
+  - Administration -> Organisations -> Starter Kit -> Download
+  - extract the zipfile in workshop folder (where chef-repo is present)
+7: setup knife:
+  - knife ssl fetch
+  - knife ssl check
+  - knife client list
