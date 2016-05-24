@@ -5,5 +5,5 @@
   - update the file /opt/opscode/chef-server.rb
   - chef-server-ctl reconfigure
 3: install server front-end:
-  - sudo chef-server-ctl install opscode-reporting
+  - sudo chef-server-ctl install chef-manage
   - sudo chef-server-ctl reconfigure
