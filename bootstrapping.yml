@@ -2,5 +2,4 @@
   - node1, node2, chef-server
 2: bootstrapping a new machine:
   - knife bootstrap NODE-HOST-NAME/IP --ssh-user SSH-USER-NAME --ssh-pass SSH-PASSWORD --sudo --node-name node2 --run-list 'recipe[simple-website]'
-3: done:
   

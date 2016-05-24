@@ -1,0 +1,13 @@
+{
+    "name": "webserver",
+    "description": "",
+    "cookbook_versions": {
+        "simple_website": "= 0.1.0"
+    },
+    "default_attributes": {
+        "port_number": 8090
+    },
+    "run_list": [
+        "recipe[simple_website]"
+    ]
+}

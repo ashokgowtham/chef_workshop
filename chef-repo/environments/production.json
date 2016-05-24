@@ -1,0 +1,12 @@
+{
+    "name": "production",
+    "description": "production environment related configs",
+    "cookbook_versions": {
+    },
+    "default_attributes": {
+    },
+    "override_attributes": {
+    },
+    "run_list": [
+    ]
+}
